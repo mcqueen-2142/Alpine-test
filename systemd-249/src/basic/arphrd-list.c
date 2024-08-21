@@ -1,8 +1,10 @@
-/* SPDX-License-Identifier: LGPL-2.1-or-later */
-
 #include <errno.h>
 #include <linux/if_arp.h>
 #include <string.h>
+
+#ifndef ARPHRD_MCTP
+#define ARPHRD_MCTP 539
+#endif
 
 #include "arphrd-list.h"
 #include "macro.h"
